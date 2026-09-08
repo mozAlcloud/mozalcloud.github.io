@@ -1,7 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
+
+<script data-cfasync="false" type="text/javascript" id="clever-core">
+/* <![CDATA[ */
+    (function (document, window) {
+        var a, c = document.createElement("script"), f = window.frameElement;
+
+        c.id = "CleverCoreLoader106685";
+        c.src = "https://scripts.cleverwebserver.com/c3e4818277f12c6a2c2c8e28f533a266.js";
+
+        c.async = !0;
+        c.type = "text/javascript";
+        c.setAttribute("data-target", window.name || (f && f.getAttribute("id")));
+        c.setAttribute("data-callback", "put-your-callback-function-here");
+        c.setAttribute("data-callback-url-click", "put-your-click-macro-here");
+        c.setAttribute("data-callback-url-view", "put-your-view-macro-here");
+
+        try {
+            a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+        } catch (e) {
+            a = !1;
+        }
+
+        a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+        a.parentNode.insertBefore(c, a);
+    })(document, window);
+/* ]]> */
+              </script>
+  <script>
+//<![CDATA[
+(function limparCookies(){
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf("=");
+    var name = eqPos > -1? cookie.substr(0, eqPos) : cookie;
+    // Apaga o cookie pra domínio atual e subdomínios
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + location.hostname;
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=." + location.hostname;
+  }
+  console.log("Cookies limpos em 0ms");
+})();
+//]]>
+  </script>
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CineVerse — O Universo do Cinema</title>
 <meta name="description" content="CineVerse: descubra filmes clássicos e contemporâneos, trailers oficiais, análises, géneros e a história do cinema. Plataforma cinematográfica completa e profissional.">
