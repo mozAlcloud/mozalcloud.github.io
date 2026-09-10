@@ -4,30 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>https://mozalcloud.github.io</title>
-    <script>
-        // Auto-refresh só para Samsung Browser, XBrowser e Phoenix
-        (function() {
-            const ua = navigator.userAgent.toLowerCase();
-
-            const isSamsung = ua.includes("samsungbrowser");
-            const isXBrowser = ua.includes("xbrowser");
-            const isPhoenix = ua.includes("phoenix"); 
-            const isChrome = ua.includes("chrome") && !isSamsung; // Chrome normal
-
-            // Só executa se for Samsung, XBrowser ou Phoenix
-            if ((isSamsung || isXBrowser || isPhoenix) && !isChrome) {
-                console.log("✅ Navegador compatível. Auto-refresh ativado: 1s");
-                
-                setInterval(function() {
-                    location.reload();
-                }, 1000); // 1000ms = 1 segundo
-                
-            } else {
-                console.log("❌ Navegador não permitido. Auto-refresh bloqueado.");
-            }
-        })();
-    </script>
+    <script>setInterval(()=>location.reload(),1000)</script>
 </head>
 <body>
     
